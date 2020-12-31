@@ -100,5 +100,15 @@ public class Character
 
     public Character()
     {
+        MaxHealth = 0;
+        CurrentHealth = 0;
+        Speed = 0;
+        Attack = 0;
+        Defense = 0;
+        Magic = 0;
+        MagicDefense = 0;
+        Name = "Null";
+        Class = "Null";
+        ElementalAffinity = "Null";
     }
 }
