@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Equipment
+public class Equipment : BaseObject
 {
     #region Members
 

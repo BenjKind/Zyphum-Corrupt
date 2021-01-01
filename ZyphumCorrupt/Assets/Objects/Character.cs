@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-public class Character
+public class Character : BaseObject
 {
     #region Members
 
