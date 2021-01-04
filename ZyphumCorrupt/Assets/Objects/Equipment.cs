@@ -3,11 +3,13 @@
 public class Equipment : BaseObject
 {
     #region Members
-
+    //public Identiy ObjectType;
     //This will be used to add to character stats temporarily
     private int boost;
     //This will be sourced from a dictionary in global namespace
     private string boostType;
+
+    public string Name;
 
     #endregion
 
@@ -34,7 +36,9 @@ public class Equipment : BaseObject
 
     public Equipment()
 	{
+        ObjectType = Identiy.Equipment;
         boost = 0;
         boostType = "Null";
+        Name = "Null";
 	}
 }

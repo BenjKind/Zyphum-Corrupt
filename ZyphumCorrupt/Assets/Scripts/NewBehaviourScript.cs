@@ -13,6 +13,10 @@ public class NewBehaviourScript : MonoBehaviour
         Arachnae.SetName("Arachnae");
         Character charlot = new Character();
         Arachnae.characters.ObjectList.Add(charlot);
+        Item thing = new Item();
+        Equipment another = new Equipment();
+        Arachnae.items.ObjectList.Add(thing);
+        Arachnae.items.ObjectList.Add(another);
     }
     public void dothisthing()
     {
@@ -20,7 +24,23 @@ public class NewBehaviourScript : MonoBehaviour
         Debug.Log(Arachnae.GetName());
         Character temp = (Character)Arachnae.characters.ObjectList[0];
         Debug.Log(temp.GetMHP());
-        //user>inventory>objectlist<baseobject>>character
+        for(int i = 0; i < 2; i++)
+        {
+            switch(Arachnae.items.ObjectList[i].ObjectType)
+            {
+                case Identiy.Item:
+                    Item temp2 = (Item)Arachnae.items.ObjectList[i];
+                    Debug.Log(temp2.Name);
+                    break;
+                case Identiy.Equipment:
+                    Equipment temp3 = (Equipment)Arachnae.items.ObjectList[i];
+                    Debug.Log(temp3.Name);
+                    break;
+                default:
+                    Debug.LogError("Something dun did a fuck up");
+                    break;
+            }
+        }
     }
     // Start is called before the first frame update
     void Start()

@@ -7,8 +7,8 @@ public class Item : BaseObject
 {
 
     #region Members
-
-    string Name;
+    //public Identiy ObjectType;
+    public string Name;
     private string Type;
     private int Points;
 
@@ -40,6 +40,7 @@ public class Item : BaseObject
 
     public Item()
     {
-
+        ObjectType = Identiy.Item;
+        Name = "null";
     }
 }

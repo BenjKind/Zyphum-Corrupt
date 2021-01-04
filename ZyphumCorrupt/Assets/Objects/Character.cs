@@ -5,6 +5,7 @@ public class Character : BaseObject
 {
     #region Members
 
+    //public Identiy ObjectType;
     private int MaxHealth,
     CurrentHealth,
     Speed,
@@ -100,7 +101,8 @@ public class Character : BaseObject
 
     public Character()
     {
-        MaxHealth = 50;
+        ObjectType = Identiy.Character;
+        MaxHealth = 0;
         CurrentHealth = 0;
         Speed = 0;
         Attack = 0;
