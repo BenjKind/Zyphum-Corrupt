@@ -100,7 +100,7 @@ public class Character : BaseObject
 
     public Character()
     {
-        MaxHealth = 0;
+        MaxHealth = 50;
         CurrentHealth = 0;
         Speed = 0;
         Attack = 0;

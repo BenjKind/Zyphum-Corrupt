@@ -9,9 +9,10 @@ public class Inventory
 
     int maxCount;
 
-    List<BaseObject> ObjectList;
+    public List<BaseObject> ObjectList;
 
     #endregion
+
 
     public Inventory(int max)
     {
