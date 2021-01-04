@@ -39,6 +39,7 @@ public class NewBehaviourScript : MonoBehaviour
                 default:
                     Debug.LogError("Something dun did a fuck up");
                     break;
+
             }
         }
     }
