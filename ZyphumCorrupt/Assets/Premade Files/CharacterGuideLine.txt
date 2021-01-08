@@ -1,0 +1,21 @@
+//This is a guideline on how to write a file for a character prefab or save file
+//Each stat or object tied to a character will be on a new line and start with the stat name ie Name MHP CHP STR and so on
+//The files for generating characters from the gacha will not have CHP 
+//HP will be the only stat not based out of 1 - 100. HP will be capped at 99,999. Mana will be tied to MAG and will be multipled by 10. So if the character has
+//50 MAG they will have 500 Mana at max level. We will have to determine a way to implement this so the lower level chaacters are restricted on mana. Maybe a 
+//modifer system based on level?
+
+Name:
+Class:
+Element:
+MHP:
+CHP:
+SPD:
+ATK:
+DEF:
+MAG:
+MDF:
+
+//When this is implemented we will add this in
+EXP:
+Level:
