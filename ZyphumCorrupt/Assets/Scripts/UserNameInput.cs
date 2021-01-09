@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,9 +24,23 @@ public class UserNameInput : MonoBehaviour
     }
 
     // show user info window
-    public void ShowUserInfo()
+    public void ShowUserInfo(string titleString, string inputString, Action onCancel, Action<string> onOkay)
     {
         gameObject.SetActive(true);
+
+        displayUserName.text = titleString;
+        newUserFieldText.text = inputString;
+
+        ConfirmNewUser.ClickFunc = () =>
+        {
+            HideUserInfo();
+            onOkay(newUserFieldText.text);
+        };
+        CancelNewUser.ClickFunc = () =>
+        {
+            HideUserInfo();
+            onCancel();
+        };
     }
 
     // hide user info window
