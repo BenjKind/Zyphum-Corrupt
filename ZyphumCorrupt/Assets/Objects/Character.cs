@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Net;
 
 
 public class Character : BaseObject
@@ -7,7 +8,7 @@ public class Character : BaseObject
     #region Members
 
     //public Identiy ObjectType;
-    private int MaxHealth,
+    public int MaxHealth,
     CurrentHealth,
     Speed,
     Attack,
@@ -17,9 +18,9 @@ public class Character : BaseObject
     MagicDefense;
     public string Name;
     //All classes will be stored in a premade dictionary in global name space
-    private string Class;
+    public string Class;
     //As the class this will be an enum in global namespace
-    private string ElementalAffinity;
+    public string ElementalAffinity;
 
     #endregion Members
 

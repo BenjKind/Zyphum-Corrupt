@@ -8,9 +8,11 @@ public class User
 
     #region Members
 
-    private string Name;
-    public Inventory characters;
-    public Inventory items;
+    public string Name;
+    public List<Character> characters = new List<Character>();
+    public List<Item> items = new List<Item>();
+    public List<Equipment> equipment = new List<Equipment>();
+
 
     #endregion
 
@@ -31,9 +33,6 @@ public class User
     public User()
     {
         Name = "Null";
-        characters = new Inventory(10);
-        items = new Inventory(50);
-
     }
 
 

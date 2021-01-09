@@ -5,9 +5,9 @@ public class Equipment : BaseObject
     #region Members
     //public Identiy ObjectType;
     //This will be used to add to character stats temporarily
-    private int boost;
+    public int boost;
     //This will be sourced from a dictionary in global namespace
-    private string boostType;
+    public string boostType;
 
     public string Name;
 

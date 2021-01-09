@@ -24,7 +24,23 @@ public class Serializer
         
         System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(user.GetType());
         x.Serialize(sw, user);
+
+        sw.Close();
         
+    }
+    public void DeserializeUser(out User userOut)
+    {
+        StreamReader sr = new StreamReader(filePath);
+
+        User user = new User();
+
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(user.GetType());
+        user = (User)x.Deserialize(sr);
+        sr.Close();
+
+        userOut = user;
+
+
     }
 
 }

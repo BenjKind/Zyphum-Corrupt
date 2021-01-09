@@ -10,14 +10,14 @@ public class Item : BaseObject
     #region Members
     //public Identiy ObjectType;
     public string Name;
-    private string Type;
-    private int Points;
+    public string Type;
+    public int Points;
 
     #endregion
 
     #region Getters Setters
 
-    public string GetType()
+    public string GetTypeA()
     {
         return Type;
     }
