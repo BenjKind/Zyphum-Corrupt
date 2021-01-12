@@ -8,7 +8,7 @@ using UnityEngine;
 public class Serializer
 {
     public string filePath;
-
+    private string lastSave = "lastSave.xml";
     public Serializer()
     {
 
@@ -26,7 +26,15 @@ public class Serializer
         x.Serialize(sw, user);
 
         sw.Close();
-        
+
+        sw = new StreamWriter(lastSave);
+
+        System.Xml.Serialization.XmlSerializer y = new System.Xml.Serialization.XmlSerializer(user.GetType());
+        y.Serialize(sw, user);
+
+        sw.Close();
+
+
     }
     public void DeserializeUser(out User userOut)
     {
