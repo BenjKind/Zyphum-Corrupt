@@ -7,8 +7,6 @@ public class Testing : MonoBehaviour
 {
     public void Tester()
     {
-        Debug.Log(GameObject.Find("Button").GetComponent<NewBehaviourScript>().Arachnae.Name);
-        Debug.Log(GameObject.Find("Button").GetComponent<NewBehaviourScript>().Arachnae.characters[0].Name);
 
 
     }

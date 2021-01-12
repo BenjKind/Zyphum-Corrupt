@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<User xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Arachnae</Name>
+  <characters>
+    <Character>
+      <ObjectType>Character</ObjectType>
+      <MaxHealth>0</MaxHealth>
+      <CurrentHealth>0</CurrentHealth>
+      <Speed>0</Speed>
+      <Attack>0</Attack>
+      <Defense>0</Defense>
+      <Magic>0</Magic>
+      <MagicDefense>0</MagicDefense>
+      <Name>Null</Name>
+      <Class>Null</Class>
+      <ElementalAffinity>Null</ElementalAffinity>
+    </Character>
+  </characters>
+  <items>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <Name>null</Name>
+      <Points>0</Points>
+    </Item>
+  </items>
+  <equipment>
+    <Equipment>
+      <ObjectType>Equipment</ObjectType>
+      <boost>0</boost>
+      <boostType>Null</boostType>
+      <Name>Null</Name>
+    </Equipment>
+  </equipment>
+</User>
