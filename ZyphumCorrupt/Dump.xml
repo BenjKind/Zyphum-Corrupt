@@ -15,6 +15,32 @@
       <Class>Null</Class>
       <ElementalAffinity>Null</ElementalAffinity>
     </Character>
+    <Character>
+      <ObjectType>Character</ObjectType>
+      <MaxHealth>0</MaxHealth>
+      <CurrentHealth>0</CurrentHealth>
+      <Speed>0</Speed>
+      <Attack>0</Attack>
+      <Defense>0</Defense>
+      <Magic>0</Magic>
+      <MagicDefense>0</MagicDefense>
+      <Name>Null</Name>
+      <Class>Null</Class>
+      <ElementalAffinity>Null</ElementalAffinity>
+    </Character>
+    <Character>
+      <ObjectType>Character</ObjectType>
+      <MaxHealth>0</MaxHealth>
+      <CurrentHealth>0</CurrentHealth>
+      <Speed>0</Speed>
+      <Attack>0</Attack>
+      <Defense>0</Defense>
+      <Magic>0</Magic>
+      <MagicDefense>0</MagicDefense>
+      <Name>Null</Name>
+      <Class>Null</Class>
+      <ElementalAffinity>Null</ElementalAffinity>
+    </Character>
   </characters>
   <items>
     <Item>
@@ -22,8 +48,30 @@
       <Name>null</Name>
       <Points>0</Points>
     </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <Name>null</Name>
+      <Points>0</Points>
+    </Item>
+    <Item>
+      <ObjectType>Item</ObjectType>
+      <Name>null</Name>
+      <Points>0</Points>
+    </Item>
   </items>
   <equipment>
+    <Equipment>
+      <ObjectType>Equipment</ObjectType>
+      <boost>0</boost>
+      <boostType>Null</boostType>
+      <Name>Null</Name>
+    </Equipment>
+    <Equipment>
+      <ObjectType>Equipment</ObjectType>
+      <boost>0</boost>
+      <boostType>Null</boostType>
+      <Name>Null</Name>
+    </Equipment>
     <Equipment>
       <ObjectType>Equipment</ObjectType>
       <boost>0</boost>
