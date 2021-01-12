@@ -4,10 +4,20 @@ using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class loadMenu : MonoBehaviour
+public class ZyphumScript : MonoBehaviour
 {
+    public User currentUser = new User();
     private void Awake()
     {
         SceneManager.LoadScene(1, LoadSceneMode.Additive);
+    }
+
+    public User GetUser()
+    {
+        return currentUser;
+    }
+    public void SetUser(User user)
+    {
+        currentUser = user;
     }
 }

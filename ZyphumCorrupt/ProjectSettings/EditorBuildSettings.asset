@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/preload.unity
     guid: 86395d340cfee964aa7c1a2e44392c61
+  - enabled: 1
+    path: Assets/Scenes/BootScreen.unity
+    guid: 918b2dc71056c4c4b967a1f338890709
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 86c1c787862bd8a4b9899e49f6c0e6b5
   m_configObjects: {}

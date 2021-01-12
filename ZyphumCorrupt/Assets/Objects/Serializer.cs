@@ -50,5 +50,18 @@ public class Serializer
 
 
     }
+    public void DeserializeLast(out User user)
+    {
+        StreamReader sr = new StreamReader(lastSave);
+
+        User tempUser = new User();
+
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(tempUser.GetType());
+        tempUser = (User)x.Deserialize(sr);
+        sr.Close();
+
+        user = tempUser;
+
+    }
 
 }
