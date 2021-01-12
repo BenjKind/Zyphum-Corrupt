@@ -3,12 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class NewBehaviourScript : MonoBehaviour
 {
+    public static User Arachnae = new User();
 
-    public User Arachnae = new User();
     public void userUpdate()
     {
         Arachnae.SetName("Arachnae");
@@ -31,18 +29,15 @@ public class NewBehaviourScript : MonoBehaviour
         Debug.Log(ArachCopy.items[0].Name);
         Debug.Log(ArachCopy.equipment[0].Name);
         Debug.Log(ArachCopy.characters[0].Name);
-
-
     }
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-       
-
     }
 }
