@@ -11,7 +11,7 @@
       <Defense>0</Defense>
       <Magic>0</Magic>
       <MagicDefense>0</MagicDefense>
-      <Name>Bitchika</Name>
+      <Name>Null</Name>
       <Class>Null</Class>
       <ElementalAffinity>Null</ElementalAffinity>
     </Character>
@@ -19,7 +19,7 @@
   <items>
     <Item>
       <ObjectType>Item</ObjectType>
-      <Name>Dilbrow Baggins</Name>
+      <Name>null</Name>
       <Points>0</Points>
     </Item>
   </items>
@@ -28,7 +28,7 @@
       <ObjectType>Equipment</ObjectType>
       <boost>0</boost>
       <boostType>Null</boostType>
-      <Name>Eliphino</Name>
+      <Name>Null</Name>
     </Equipment>
   </equipment>
 </User>
