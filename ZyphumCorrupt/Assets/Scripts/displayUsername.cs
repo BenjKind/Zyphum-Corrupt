@@ -6,12 +6,9 @@ using TMPro;
 
 public class displayUsername : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public void Start()
+    private void Awake()
     {
-        User nameStuff = new User();
-        Serializer serialize = new Serializer("Dump.xml");
-        serialize.DeserializeUser(out nameStuff);
-        GameObject.Find("displayUserName").GetComponent<TextMeshProUGUI>().SetText(nameStuff.Name);
+        gameObject.GetComponent<TextMeshProUGUI>().SetText(GameObject.Find(
+            "Zyphum").GetComponent<ZyphumScript>().currentUser.Name);
     }
 }
