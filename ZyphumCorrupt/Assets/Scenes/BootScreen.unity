@@ -218,8 +218,8 @@ GameObject:
   - component: {fileID: 114406014}
   - component: {fileID: 114406013}
   - component: {fileID: 114406012}
-  - component: {fileID: 114406016}
   - component: {fileID: 114406015}
+  - component: {fileID: 114406016}
   m_Layer: 5
   m_Name: newUser
   m_TagString: Untagged
@@ -303,9 +303,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 663430958}
+      - m_Target: {fileID: 114406015}
         m_TargetAssemblyTypeName: PlayOptions, Assembly-CSharp
-        m_MethodName: CreateNewUser
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 114406010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72236cc4cff84624f905574cc03ca4e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e32caff0261b284b8de274828a27184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &125118572
@@ -455,8 +455,8 @@ GameObject:
   - component: {fileID: 128959501}
   - component: {fileID: 128959500}
   - component: {fileID: 128959499}
-  - component: {fileID: 128959503}
   - component: {fileID: 128959502}
+  - component: {fileID: 128959503}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -540,9 +540,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 663430958}
-        m_TargetAssemblyTypeName: PlayOptions, Assembly-CSharp
-        m_MethodName: ContinueLastSave
+      - m_Target: {fileID: 128959502}
+        m_TargetAssemblyTypeName: continueGame, Assembly-CSharp
+        m_MethodName: gameContinue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 128959497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72236cc4cff84624f905574cc03ca4e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e32caff0261b284b8de274828a27184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &202249868
@@ -1028,6 +1028,7 @@ GameObject:
   - component: {fileID: 619427042}
   - component: {fileID: 619427046}
   - component: {fileID: 619427045}
+  - component: {fileID: 619427047}
   m_Layer: 5
   m_Name: MainMenu_PlayButton
   m_TagString: Untagged
@@ -1135,6 +1136,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 619427047}
+        m_TargetAssemblyTypeName: playButtonLogi, Assembly-CSharp
+        m_MethodName: gameOptions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &619427043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1197,6 +1210,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e32caff0261b284b8de274828a27184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &619427047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619427040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711c4c7273c93fd41871e733f0507528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &663430955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,7 +1232,6 @@ GameObject:
   m_Component:
   - component: {fileID: 663430956}
   - component: {fileID: 663430957}
-  - component: {fileID: 663430958}
   m_Layer: 5
   m_Name: PlayOptions
   m_TagString: Untagged
@@ -1250,18 +1274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55da310decfddf04591a863557038c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &663430958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663430955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7fedd01e91ff924fb9fc834798e8960, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &666674223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,6 +1286,7 @@ GameObject:
   - component: {fileID: 666674227}
   - component: {fileID: 666674226}
   - component: {fileID: 666674225}
+  - component: {fileID: 666674228}
   m_Layer: 5
   m_Name: ReturnMainMenu
   m_TagString: Untagged
@@ -1380,6 +1393,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 666674228}
+        m_TargetAssemblyTypeName: returnButtonLogi, Assembly-CSharp
+        m_MethodName: returnMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &666674226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1418,6 +1443,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666674223}
   m_CullTransparentMesh: 1
+--- !u!114 &666674228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666674223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b9f4227976b25488d8065b3ce32273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &753311746
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,8 +2301,8 @@ GameObject:
   - component: {fileID: 1899182932}
   - component: {fileID: 1899182931}
   - component: {fileID: 1899182930}
-  - component: {fileID: 1899182934}
   - component: {fileID: 1899182933}
+  - component: {fileID: 1899182934}
   m_Layer: 5
   m_Name: LoadSave
   m_TagString: Untagged
@@ -2349,9 +2386,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 663430958}
+      - m_Target: {fileID: 1899182933}
         m_TargetAssemblyTypeName: PlayOptions, Assembly-CSharp
-        m_MethodName: SelectSaveToLoad
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2420,7 +2457,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1899182928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72236cc4cff84624f905574cc03ca4e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e32caff0261b284b8de274828a27184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1971091669
