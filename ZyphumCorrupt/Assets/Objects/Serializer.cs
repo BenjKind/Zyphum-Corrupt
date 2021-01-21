@@ -64,4 +64,37 @@ public class Serializer
 
     }
 
+    public void SerializeCharacter(Character character)
+    {
+        string path = "Characters/" + character.Name + ".xml";
+
+        StreamWriter sw = new StreamWriter(path);
+
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(character.GetType());
+        x.Serialize(sw, character);
+
+        sw.Close();
+        sw = new StreamWriter(path);
+
+        System.Xml.Serialization.XmlSerializer y = new System.Xml.Serialization.XmlSerializer(character.GetType());
+        y.Serialize(sw, character);
+
+        sw.Close();
+
+    }
+    public void DeserializeCharacter(string characterName , out Character character)
+    {
+        string path = "Characters/" +characterName+ ".xml";
+
+        StreamReader sr = new StreamReader(path);
+
+        Character Char = new Character();
+
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(Char.GetType());
+        Char = (Character)x.Deserialize(sr);
+        sr.Close();
+
+        character = Char;
+    }
+
 }

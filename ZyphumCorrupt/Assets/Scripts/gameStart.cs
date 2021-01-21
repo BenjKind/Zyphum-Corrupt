@@ -14,8 +14,5 @@ public class gameStart : MonoBehaviour
         GameObject.Find("Zyphum").GetComponent<ZyphumScript>().SetUser(temp);
 
     }
-    public void startGame()
-    {
-        SceneManager.LoadScene(2, LoadSceneMode.Single);
-    }
+    
 }
