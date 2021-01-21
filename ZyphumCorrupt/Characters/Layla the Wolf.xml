@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Character xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectType>Character</ObjectType>
+  <MaxHealth>16</MaxHealth>
+  <CurrentHealth>0</CurrentHealth>
+  <Speed>88</Speed>
+  <Attack>12</Attack>
+  <Defense>14</Defense>
+  <Magic>94</Magic>
+  <MagicDefense>95</MagicDefense>
+  <Name>Layla the Wolf</Name>
+  <Class>White Mage</Class>
+  <ElementalAffinity>Fire</ElementalAffinity>
+</Character>

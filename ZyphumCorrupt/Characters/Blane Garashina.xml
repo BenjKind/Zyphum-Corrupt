@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Character xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectType>Character</ObjectType>
+  <MaxHealth>76</MaxHealth>
+  <CurrentHealth>0</CurrentHealth>
+  <Speed>22</Speed>
+  <Attack>58</Attack>
+  <Defense>87</Defense>
+  <Magic>14</Magic>
+  <MagicDefense>43</MagicDefense>
+  <Name>Blane Garashina</Name>
+  <Class>Brawler</Class>
+  <ElementalAffinity>Ice</ElementalAffinity>
+</Character>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Character xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectType>Character</ObjectType>
+  <MaxHealth>76</MaxHealth>
+  <CurrentHealth>0</CurrentHealth>
+  <Speed>62</Speed>
+  <Attack>66</Attack>
+  <Defense>48</Defense>
+  <Magic>76</Magic>
+  <MagicDefense>74</MagicDefense>
+  <Name>Luthren Alanaust</Name>
+  <Class>Rune Blade</Class>
+  <ElementalAffinity>Fire</ElementalAffinity>
+</Character>

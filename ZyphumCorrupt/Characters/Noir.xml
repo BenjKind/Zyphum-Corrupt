@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Character xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectType>Character</ObjectType>
+  <MaxHealth>20</MaxHealth>
+  <CurrentHealth>0</CurrentHealth>
+  <Speed>44</Speed>
+  <Attack>53</Attack>
+  <Defense>13</Defense>
+  <Magic>70</Magic>
+  <MagicDefense>68</MagicDefense>
+  <Name>Noir</Name>
+  <Class>Red Mage</Class>
+  <ElementalAffinity>Ice</ElementalAffinity>
+</Character>
