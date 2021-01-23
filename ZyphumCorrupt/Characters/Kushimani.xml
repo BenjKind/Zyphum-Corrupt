@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Character xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObjectType>Character</ObjectType>
+  <MaxHealth>22</MaxHealth>
+  <CurrentHealth>0</CurrentHealth>
+  <Speed>57</Speed>
+  <Attack>26</Attack>
+  <Defense>13</Defense>
+  <Magic>88</Magic>
+  <MagicDefense>76</MagicDefense>
+  <Name>Kushimani</Name>
+  <Class>Black Mage</Class>
+  <ElementalAffinity>Void</ElementalAffinity>
+</Character>
