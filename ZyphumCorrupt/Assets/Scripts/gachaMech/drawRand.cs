@@ -47,8 +47,12 @@ public class drawRand : MonoBehaviour
 
         // End RNG Logic
 
+        // TODO: Integrate to output to game when more database is built and animations/scene are ready
+
         Debug.Log("Files found: " + countOfFiles);
         Debug.Log(random);
         Debug.Log(chosenCard);
+
+        // End TODO: Integrate to output to game when more database is built and animations/scene are ready
     }
 }
