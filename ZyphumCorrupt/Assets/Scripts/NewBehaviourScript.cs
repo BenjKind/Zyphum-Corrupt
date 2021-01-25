@@ -81,5 +81,46 @@ foreach(Character person in characters)
         */
 
         #endregion Code Block
+        #region Item Code Block
+
+        Serializer sz = new Serializer();
+
+        Item Health = new Item();
+        Health.Name = "Health Potion";
+        Health.Points = 5;
+        Health.Type = "Healing";
+        Item Mana = new Item();
+        Mana.Name = "Mana Potion";
+        Mana.Points = 5;
+        Mana.Type = "Restore";
+        Item Grenade = new Item();
+        Grenade.Name = "Grenade";
+        Grenade.Points = 10;
+        Grenade.Type = "Damage";
+
+        Equipment Sword = new Equipment();
+        Sword.Name = "Copper Sword";
+        Sword.boost = 5;
+        Sword.boostType = "Strengthn";
+        Equipment Chestplate = new Equipment();
+        Chestplate.Name = "Copper Chestplate";
+        Chestplate.boost = 5;
+        Chestplate.boostType = "Defense";
+        Equipment boots = new Equipment();
+        boots.Name = "Soft Leather Boots";
+        boots.boost = 5;
+        boots.boostType = "Speed";
+
+        sz.SerializeItem(Health);
+        sz.SerializeItem(Mana);
+        sz.SerializeItem(Grenade);
+
+
+        sz.SerializeEquipment(Sword);
+        sz.SerializeEquipment(Chestplate);
+        sz.SerializeEquipment(boots);
+
+
+        #endregion
     }
 }
