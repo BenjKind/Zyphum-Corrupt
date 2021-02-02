@@ -10,6 +10,7 @@ public class Equipment : BaseObject
     public string boostType;
 
     public string Name;
+    public int price;
 
     #endregion
 

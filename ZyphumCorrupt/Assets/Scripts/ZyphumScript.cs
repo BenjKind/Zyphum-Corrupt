@@ -8,8 +8,8 @@ public class ZyphumScript : MonoBehaviour
 {
     public User currentUser = new User();
 
-    List<Equipment> equip = new List<Equipment>();
-    List<Item> items = new List<Item>();
+    public List<Equipment> equip = new List<Equipment>();
+    public List<Item> items = new List<Item>();
 
 
 
@@ -24,16 +24,16 @@ public class ZyphumScript : MonoBehaviour
         foreach(string str in equipFiles)
         {
             Equipment equipment = new Equipment();
-            sz.DeserializeEquioment(str, out equipment);
+            sz.DeserializeEquiomentFull(str, out equipment);
             equip.Add(equipment);
         }
         foreach (string str in itemFiles)
         {
             Item item = new Item();
-            sz.DeserializeItem(str, out item);
+            sz.DeserializeItemFull(str, out item);
             items.Add(item);
         }
-
+        
 
         SceneManager.LoadScene(1, LoadSceneMode.Additive);
     }

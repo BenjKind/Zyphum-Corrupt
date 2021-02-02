@@ -128,6 +128,20 @@ public class Serializer
 
         item = obj;
     }
+    public void DeserializeItemFull(string itemName, out Item item)
+    {
+        string path = itemName;
+
+        StreamReader sr = new StreamReader(path);
+
+        Item obj = new Item();
+
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(obj.GetType());
+        obj = (Item)x.Deserialize(sr);
+        sr.Close();
+
+        item = obj;
+    }
     public void SerializeEquipment(Equipment equipment)
     {
         string path = "Equipment/" + equipment.Name + ".xml";
@@ -161,6 +175,19 @@ public class Serializer
         equipment = Equip;
     }
 
+    public void DeserializeEquiomentFull(string equipmentName, out Equipment equipment)
+    {
+        string path =  equipmentName;
 
+        StreamReader sr = new StreamReader(path);
+
+        Equipment Equip = new Equipment();
+
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(Equip.GetType());
+        Equip = (Equipment)x.Deserialize(sr);
+        sr.Close();
+
+        equipment = Equip;
+    }
 
 }
