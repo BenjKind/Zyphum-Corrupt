@@ -12,14 +12,13 @@ public class buyButton : MonoBehaviour
             GameObject.Find("Zyphum").GetComponent<ZyphumScript>().currentUser.currency -= iS.boughtItem.price;
 
             GameObject.Find("Zyphum").GetComponent<ZyphumScript>().currentUser.items.Add(iS.boughtItem);
-        }    
-        if(iS.boughtEquip != null)
+        }
+        if (iS.boughtEquip != null)
         {
             GameObject.Find("Zyphum").GetComponent<ZyphumScript>().currentUser.currency -= iS.boughtEquip.price;
 
             GameObject.Find("Zyphum").GetComponent<ZyphumScript>().currentUser.equipment.Add(iS.boughtEquip);
-
         }
-        Debug.Log( GameObject.Find("Zyphum").GetComponent<ZyphumScript>().currentUser.currency.ToString());
+        Debug.Log(GameObject.Find("Zyphum").GetComponent<ZyphumScript>().currentUser.currency.ToString());
     }
 }

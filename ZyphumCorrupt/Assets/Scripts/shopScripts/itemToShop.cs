@@ -7,11 +7,11 @@ using UnityEngine.UI;
 public class itemToShop : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Awake()
+    private void Awake()
     {
         int count = 0;
 
-        foreach(Item item in GameObject.Find("Zyphum").GetComponent<ZyphumScript>().items)
+        foreach (Item item in GameObject.Find("Zyphum").GetComponent<ZyphumScript>().items)
         {
             string str = "Item";
             str += count.ToString();
@@ -25,7 +25,7 @@ public class itemToShop : MonoBehaviour
             textPrice.text = "Price: " + item.price;
             count++;
         }
-        foreach(Equipment e in GameObject.Find("Zyphum").GetComponent<ZyphumScript>().equip)
+        foreach (Equipment e in GameObject.Find("Zyphum").GetComponent<ZyphumScript>().equip)
         {
             string str = "Item";
             str += count.ToString();
@@ -43,8 +43,7 @@ public class itemToShop : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
     }
 }

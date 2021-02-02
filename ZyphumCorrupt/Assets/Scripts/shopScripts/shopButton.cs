@@ -6,15 +6,13 @@ using UnityEngine.UI;
 public class shopButton : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
     }
 
     public void showDetails()
@@ -30,9 +28,9 @@ public class shopButton : MonoBehaviour
         Transform itemType = transformDetail.Find("itemType");
         Transform itemBoostType = transformDetail.Find("itemBoostType");
         Transform itemPrice = transformDetail.Find("itemPrice");
-        foreach(Equipment e in zy.equip)
+        foreach (Equipment e in zy.equip)
         {
-            if(name == e.Name)
+            if (name == e.Name)
             {
                 nameOfItem.GetComponent<UnityEngine.UI.Text>().text = name;
                 itemType.GetComponent<UnityEngine.UI.Text>().text = "Equipment";
