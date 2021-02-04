@@ -12,6 +12,7 @@ public class User
     public List<Character> characters = new List<Character>();
     public List<Item> items = new List<Item>();
     public List<Equipment> equipment = new List<Equipment>();
+    public int currency = 0;
 
 
     #endregion

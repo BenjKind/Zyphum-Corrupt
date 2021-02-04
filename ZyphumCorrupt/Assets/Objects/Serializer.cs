@@ -96,5 +96,98 @@ public class Serializer
 
         character = Char;
     }
+    public void SerializeItem(Item item)
+    {
+        string path = "Items/" + item.Name + ".xml";
+
+        StreamWriter sw = new StreamWriter(path);
+
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(item.GetType());
+        x.Serialize(sw, item);
+
+        sw.Close();
+        sw = new StreamWriter(path);
+
+        System.Xml.Serialization.XmlSerializer y = new System.Xml.Serialization.XmlSerializer(item.GetType());
+        y.Serialize(sw, item);
+
+        sw.Close();
+
+    }
+    public void DeserializeItem(string itemName, out Item item)
+    {
+        string path = "Items/" + itemName + ".xml";
+
+        StreamReader sr = new StreamReader(path);
+
+        Item obj = new Item();
+
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(obj.GetType());
+        obj = (Item)x.Deserialize(sr);
+        sr.Close();
+
+        item = obj;
+    }
+    public void DeserializeItemFull(string itemName, out Item item)
+    {
+        string path = itemName;
+
+        StreamReader sr = new StreamReader(path);
+
+        Item obj = new Item();
+
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(obj.GetType());
+        obj = (Item)x.Deserialize(sr);
+        sr.Close();
+
+        item = obj;
+    }
+    public void SerializeEquipment(Equipment equipment)
+    {
+        string path = "Equipment/" + equipment.Name + ".xml";
+
+        StreamWriter sw = new StreamWriter(path);
+
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(equipment.GetType());
+        x.Serialize(sw, equipment);
+
+        sw.Close();
+        sw = new StreamWriter(path);
+
+        System.Xml.Serialization.XmlSerializer y = new System.Xml.Serialization.XmlSerializer(equipment.GetType());
+        y.Serialize(sw, equipment);
+
+        sw.Close();
+
+    }
+    public void DeserializeEquioment(string equipmentName, out Equipment equipment)
+    {
+        string path = "Equipment/" + equipmentName + ".xml";
+
+        StreamReader sr = new StreamReader(path);
+
+        Equipment Equip = new Equipment();
+
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(Equip.GetType());
+        Equip = (Equipment)x.Deserialize(sr);
+        sr.Close();
+
+        equipment = Equip;
+    }
+
+    public void DeserializeEquiomentFull(string equipmentName, out Equipment equipment)
+    {
+        string path =  equipmentName;
+
+        StreamReader sr = new StreamReader(path);
+
+        Equipment Equip = new Equipment();
+
+        System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(Equip.GetType());
+        Equip = (Equipment)x.Deserialize(sr);
+        sr.Close();
+
+        equipment = Equip;
+    }
 
 }

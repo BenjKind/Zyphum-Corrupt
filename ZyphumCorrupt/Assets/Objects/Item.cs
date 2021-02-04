@@ -12,7 +12,7 @@ public class Item : BaseObject
     public string Name;
     public string Type;
     public int Points;
-
+    public int price;
     #endregion
 
     #region Getters Setters
