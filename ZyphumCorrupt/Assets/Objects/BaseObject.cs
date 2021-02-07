@@ -9,11 +9,12 @@ public enum Identiy
     Item,
     Equipment
 }
+
 public class BaseObject
 {
     public Identiy ObjectType;
-   public BaseObject()
-    {
 
+    public BaseObject()
+    {
     }
 }

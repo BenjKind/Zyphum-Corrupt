@@ -7,12 +7,9 @@ public class gameStart : MonoBehaviour
 {
     private void Awake()
     {
-        
         Serializer sz = new Serializer();
-        User temp =  new User();
+        User temp = new User();
         sz.DeserializeLast(out temp);
         GameObject.Find("Zyphum").GetComponent<ZyphumScript>().SetUser(temp);
-
     }
-    
 }
