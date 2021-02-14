@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class saveUser : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static User user = new User();
 
-    // Update is called once per frame
-    void Update()
+    public void saveUpdate()
     {
-        
     }
 }
