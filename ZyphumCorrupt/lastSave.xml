@@ -31,19 +31,8 @@
 
   </characters>
   <items>
-    <Item>
-      <ObjectType>Item</ObjectType>
-      <Name>null</Name>
-      <Points>0</Points>
-    </Item>
   </items>
   <equipment>
-    <Equipment>
-      <ObjectType>Equipment</ObjectType>
-      <boost>0</boost>
-      <boostType>Null</boostType>
-      <Name>Null</Name>
-    </Equipment>
   </equipment>
   <currency>5000</currency>
 </User>

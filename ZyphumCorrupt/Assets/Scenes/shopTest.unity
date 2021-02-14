@@ -724,6 +724,8 @@ GameObject:
   - component: {fileID: 125924271}
   - component: {fileID: 125924270}
   - component: {fileID: 125924269}
+  - component: {fileID: 125924273}
+  - component: {fileID: 125924274}
   m_Layer: 5
   m_Name: item (8)
   m_TagString: Untagged
@@ -815,7 +817,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 125924271}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125924273}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: ItemInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &125924271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -854,6 +868,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125924267}
   m_CullTransparentMesh: 1
+--- !u!114 &125924273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125924267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &125924274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125924267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &155856604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,6 +1144,8 @@ GameObject:
   - component: {fileID: 248799880}
   - component: {fileID: 248799879}
   - component: {fileID: 248799878}
+  - component: {fileID: 248799882}
+  - component: {fileID: 248799883}
   m_Layer: 5
   m_Name: item (3)
   m_TagString: Untagged
@@ -1195,7 +1237,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 248799880}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125924273}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: ItemInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &248799880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1234,6 +1288,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248799876}
   m_CullTransparentMesh: 1
+--- !u!114 &248799882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248799876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &248799883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248799876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &254591886
 GameObject:
   m_ObjectHideFlags: 0
@@ -2247,6 +2327,9 @@ GameObject:
   - component: {fileID: 347750433}
   - component: {fileID: 347750432}
   - component: {fileID: 347750431}
+  - component: {fileID: 347750436}
+  - component: {fileID: 347750435}
+  - component: {fileID: 347750437}
   m_Layer: 5
   m_Name: item (1)
   m_TagString: Untagged
@@ -2338,7 +2421,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 347750433}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125924273}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: ItemInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &347750433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2377,6 +2472,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347750429}
   m_CullTransparentMesh: 1
+--- !u!114 &347750435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347750429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &347750436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347750429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885c8c947594112428541e49787ad866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &347750437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347750429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &351878726
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,6 +2619,8 @@ GameObject:
   - component: {fileID: 376173160}
   - component: {fileID: 376173159}
   - component: {fileID: 376173158}
+  - component: {fileID: 376173162}
+  - component: {fileID: 376173163}
   m_Layer: 5
   m_Name: equipment (9)
   m_TagString: Untagged
@@ -2577,7 +2712,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 376173160}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 376173162}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: EquipmentInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &376173160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2616,6 +2763,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376173156}
   m_CullTransparentMesh: 1
+--- !u!114 &376173162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376173156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &376173163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376173156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &397618492
 GameObject:
   m_ObjectHideFlags: 0
@@ -2752,6 +2925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 411127297}
   - component: {fileID: 411127298}
+  - component: {fileID: 411127299}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -2812,6 +2986,18 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &411127299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411127296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885c8c947594112428541e49787ad866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &411616370
 GameObject:
   m_ObjectHideFlags: 0
@@ -3860,7 +4046,7 @@ GameObject:
   - component: {fileID: 580678711}
   - component: {fileID: 580678710}
   m_Layer: 5
-  m_Name: invWindow
+  m_Name: invDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4436,6 +4622,8 @@ GameObject:
   - component: {fileID: 644306403}
   - component: {fileID: 644306402}
   - component: {fileID: 644306401}
+  - component: {fileID: 644306405}
+  - component: {fileID: 644306406}
   m_Layer: 5
   m_Name: equipment (7)
   m_TagString: Untagged
@@ -4527,7 +4715,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 644306403}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 376173162}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: EquipmentInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &644306403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4566,6 +4766,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644306399}
   m_CullTransparentMesh: 1
+--- !u!114 &644306405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644306399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &644306406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644306399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &646045682
 GameObject:
   m_ObjectHideFlags: 0
@@ -5849,7 +6075,7 @@ GameObject:
   - component: {fileID: 750539337}
   - component: {fileID: 750539336}
   m_Layer: 5
-  m_Name: ItemEquip_Info
+  m_Name: Info_Selected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6007,6 +6233,8 @@ GameObject:
   - component: {fileID: 796384036}
   - component: {fileID: 796384035}
   - component: {fileID: 796384034}
+  - component: {fileID: 796384038}
+  - component: {fileID: 796384039}
   m_Layer: 5
   m_Name: equipment (6)
   m_TagString: Untagged
@@ -6098,7 +6326,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 796384036}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 376173162}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: EquipmentInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &796384036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6137,6 +6377,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796384032}
   m_CullTransparentMesh: 1
+--- !u!114 &796384038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796384032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &796384039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796384032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &811177454
 GameObject:
   m_ObjectHideFlags: 0
@@ -6225,6 +6491,8 @@ GameObject:
   - component: {fileID: 811896278}
   - component: {fileID: 811896277}
   - component: {fileID: 811896276}
+  - component: {fileID: 811896280}
+  - component: {fileID: 811896281}
   m_Layer: 5
   m_Name: equipment (3)
   m_TagString: Untagged
@@ -6316,7 +6584,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 811896278}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 376173162}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: EquipmentInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &811896278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6355,6 +6635,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811896274}
   m_CullTransparentMesh: 1
+--- !u!114 &811896280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811896274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &811896281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811896274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &843082955
 GameObject:
   m_ObjectHideFlags: 0
@@ -6543,6 +6849,8 @@ GameObject:
   - component: {fileID: 888498357}
   - component: {fileID: 888498356}
   - component: {fileID: 888498355}
+  - component: {fileID: 888498359}
+  - component: {fileID: 888498360}
   m_Layer: 5
   m_Name: equipment (10)
   m_TagString: Untagged
@@ -6634,7 +6942,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 888498357}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 376173162}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: EquipmentInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &888498357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6673,6 +6993,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888498353}
   m_CullTransparentMesh: 1
+--- !u!114 &888498359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888498353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &888498360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888498353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &918873046
 GameObject:
   m_ObjectHideFlags: 0
@@ -7839,6 +8185,8 @@ GameObject:
   - component: {fileID: 999265205}
   - component: {fileID: 999265204}
   - component: {fileID: 999265203}
+  - component: {fileID: 999265207}
+  - component: {fileID: 999265208}
   m_Layer: 5
   m_Name: item (6)
   m_TagString: Untagged
@@ -7930,7 +8278,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 999265205}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125924273}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: ItemInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &999265205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7969,6 +8329,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999265201}
   m_CullTransparentMesh: 1
+--- !u!114 &999265207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999265201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &999265208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999265201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &1005842372
 GameObject:
   m_ObjectHideFlags: 0
@@ -8137,6 +8523,8 @@ GameObject:
   - component: {fileID: 1025273237}
   - component: {fileID: 1025273236}
   - component: {fileID: 1025273235}
+  - component: {fileID: 1025273239}
+  - component: {fileID: 1025273240}
   m_Layer: 5
   m_Name: equipment (1)
   m_TagString: Untagged
@@ -8228,7 +8616,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1025273237}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 376173162}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: EquipmentInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1025273237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8267,6 +8667,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025273233}
   m_CullTransparentMesh: 1
+--- !u!114 &1025273239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025273233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &1025273240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025273233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &1055470538
 GameObject:
   m_ObjectHideFlags: 0
@@ -8280,6 +8706,8 @@ GameObject:
   - component: {fileID: 1055470542}
   - component: {fileID: 1055470541}
   - component: {fileID: 1055470540}
+  - component: {fileID: 1055470544}
+  - component: {fileID: 1055470545}
   m_Layer: 5
   m_Name: equipment (4)
   m_TagString: Untagged
@@ -8371,7 +8799,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1055470542}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 376173162}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: EquipmentInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1055470542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8410,6 +8850,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055470538}
   m_CullTransparentMesh: 1
+--- !u!114 &1055470544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055470538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &1055470545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055470538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &1060143936
 GameObject:
   m_ObjectHideFlags: 0
@@ -8422,6 +8888,7 @@ GameObject:
   - component: {fileID: 1060143940}
   - component: {fileID: 1060143939}
   - component: {fileID: 1060143938}
+  - component: {fileID: 1060143941}
   m_Layer: 5
   m_Name: button_Items
   m_TagString: Untagged
@@ -8529,6 +8996,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1060143941}
+        m_TargetAssemblyTypeName: itemInvDisplay, Assembly-CSharp
+        m_MethodName: Populate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1060143939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8567,6 +9046,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060143936}
   m_CullTransparentMesh: 1
+--- !u!114 &1060143941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060143936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885c8c947594112428541e49787ad866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1064703401
 GameObject:
   m_ObjectHideFlags: 0
@@ -9028,7 +9519,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 326986653}
   m_HandleRect: {fileID: 326986652}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -9784,6 +10275,8 @@ GameObject:
   - component: {fileID: 1205441272}
   - component: {fileID: 1205441271}
   - component: {fileID: 1205441270}
+  - component: {fileID: 1205441274}
+  - component: {fileID: 1205441275}
   m_Layer: 5
   m_Name: item (9)
   m_TagString: Untagged
@@ -9875,7 +10368,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1205441272}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125924273}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: ItemInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1205441272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9914,6 +10419,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205441268}
   m_CullTransparentMesh: 1
+--- !u!114 &1205441274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205441268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &1205441275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205441268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &1208526854
 GameObject:
   m_ObjectHideFlags: 0
@@ -10563,6 +11094,8 @@ GameObject:
   - component: {fileID: 1294040444}
   - component: {fileID: 1294040443}
   - component: {fileID: 1294040442}
+  - component: {fileID: 1294040446}
+  - component: {fileID: 1294040447}
   m_Layer: 5
   m_Name: equipment (2)
   m_TagString: Untagged
@@ -10654,7 +11187,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1294040444}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 376173162}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: EquipmentInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1294040444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10693,6 +11238,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294040440}
   m_CullTransparentMesh: 1
+--- !u!114 &1294040446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294040440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &1294040447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294040440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &1300541380
 GameObject:
   m_ObjectHideFlags: 0
@@ -11503,6 +12074,8 @@ GameObject:
   - component: {fileID: 1408168708}
   - component: {fileID: 1408168707}
   - component: {fileID: 1408168706}
+  - component: {fileID: 1408168710}
+  - component: {fileID: 1408168711}
   m_Layer: 5
   m_Name: item (10)
   m_TagString: Untagged
@@ -11594,7 +12167,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1408168708}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125924273}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: ItemInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1408168708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11633,6 +12218,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408168704}
   m_CullTransparentMesh: 1
+--- !u!114 &1408168710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408168704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &1408168711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408168704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &1419633541
 GameObject:
   m_ObjectHideFlags: 0
@@ -11646,6 +12257,8 @@ GameObject:
   - component: {fileID: 1419633545}
   - component: {fileID: 1419633544}
   - component: {fileID: 1419633543}
+  - component: {fileID: 1419633547}
+  - component: {fileID: 1419633548}
   m_Layer: 5
   m_Name: equipment (8)
   m_TagString: Untagged
@@ -11737,7 +12350,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1419633545}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 376173162}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: EquipmentInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1419633545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11776,6 +12401,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419633541}
   m_CullTransparentMesh: 1
+--- !u!114 &1419633547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419633541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &1419633548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419633541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &1438312628
 GameObject:
   m_ObjectHideFlags: 0
@@ -12250,6 +12901,7 @@ GameObject:
   - component: {fileID: 1553975307}
   - component: {fileID: 1553975306}
   - component: {fileID: 1553975305}
+  - component: {fileID: 1553975308}
   m_Layer: 5
   m_Name: button_Equipment
   m_TagString: Untagged
@@ -12357,6 +13009,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1553975308}
+        m_TargetAssemblyTypeName: equipInvDisplay, Assembly-CSharp
+        m_MethodName: Populate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1553975306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12395,6 +13059,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553975303}
   m_CullTransparentMesh: 1
+--- !u!114 &1553975308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553975303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2edf59c6e7dd6f643b963815c13fd5c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1563041435
 GameObject:
   m_ObjectHideFlags: 0
@@ -12566,6 +13242,8 @@ GameObject:
   - component: {fileID: 1575027127}
   - component: {fileID: 1575027126}
   - component: {fileID: 1575027125}
+  - component: {fileID: 1575027129}
+  - component: {fileID: 1575027130}
   m_Layer: 5
   m_Name: item (4)
   m_TagString: Untagged
@@ -12657,7 +13335,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1575027127}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125924273}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: ItemInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1575027127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12696,6 +13386,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575027123}
   m_CullTransparentMesh: 1
+--- !u!114 &1575027129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575027123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &1575027130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575027123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &1583860465
 GameObject:
   m_ObjectHideFlags: 0
@@ -12799,6 +13515,8 @@ GameObject:
   - component: {fileID: 1624782437}
   - component: {fileID: 1624782436}
   - component: {fileID: 1624782435}
+  - component: {fileID: 1624782439}
+  - component: {fileID: 1624782440}
   m_Layer: 5
   m_Name: item (7)
   m_TagString: Untagged
@@ -12890,7 +13608,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1624782437}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125924273}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: ItemInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1624782437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12929,6 +13659,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624782433}
   m_CullTransparentMesh: 1
+--- !u!114 &1624782439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624782433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &1624782440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624782433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &1637099527
 GameObject:
   m_ObjectHideFlags: 0
@@ -14158,6 +14914,8 @@ GameObject:
   - component: {fileID: 1922474319}
   - component: {fileID: 1922474318}
   - component: {fileID: 1922474317}
+  - component: {fileID: 1922474321}
+  - component: {fileID: 1922474322}
   m_Layer: 5
   m_Name: item (5)
   m_TagString: Untagged
@@ -14249,7 +15007,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1922474319}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125924273}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: ItemInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1922474319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14288,6 +15058,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922474315}
   m_CullTransparentMesh: 1
+--- !u!114 &1922474321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922474315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &1922474322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922474315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &1925919088
 GameObject:
   m_ObjectHideFlags: 0
@@ -14722,7 +15518,7 @@ GameObject:
   - component: {fileID: 1953019391}
   - component: {fileID: 1953019390}
   m_Layer: 5
-  m_Name: title_Item/Equip
+  m_Name: title_selected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16132,6 +16928,8 @@ GameObject:
   - component: {fileID: 2043799236}
   - component: {fileID: 2043799235}
   - component: {fileID: 2043799234}
+  - component: {fileID: 2043799238}
+  - component: {fileID: 2043799239}
   m_Layer: 5
   m_Name: item (2)
   m_TagString: Untagged
@@ -16223,7 +17021,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2043799236}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 125924273}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: ItemInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2043799236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16262,6 +17072,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043799232}
   m_CullTransparentMesh: 1
+--- !u!114 &2043799238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043799232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &2043799239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043799232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &2048190817
 GameObject:
   m_ObjectHideFlags: 0
@@ -16994,6 +17830,8 @@ GameObject:
   - component: {fileID: 2122102788}
   - component: {fileID: 2122102787}
   - component: {fileID: 2122102786}
+  - component: {fileID: 2122102790}
+  - component: {fileID: 2122102791}
   m_Layer: 5
   m_Name: equipment (5)
   m_TagString: Untagged
@@ -17085,7 +17923,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2122102788}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 376173162}
+        m_TargetAssemblyTypeName: iventoryItemButtons, Assembly-CSharp
+        m_MethodName: EquipmentInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2122102788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17124,6 +17974,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122102784}
   m_CullTransparentMesh: 1
+--- !u!114 &2122102790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122102784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27992f882a7a540915bb6113bdc6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
+--- !u!114 &2122102791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122102784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2660cad8a2f28b4b9b88e0fa47810b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inter: 0
 --- !u!1 &2132306676
 GameObject:
   m_ObjectHideFlags: 0
