@@ -8,6 +8,8 @@ public class loadUser : MonoBehaviour
 {
     private string testtest = "";
     private continueGame continueGame/* = new continueGame()*/;
+    private User global = new User();
+    private ZyphumScript globalBoi;
 
     // Start is called before the first frame update
     private void Awake()
@@ -21,17 +23,16 @@ public class loadUser : MonoBehaviour
         }
     }
 
-    public bool checkIfUserValid()
+    public bool checkIfUserValid(string fileName)
     {
         // Returns true or false upon checking user data
         // Reads XML
         // Return True = there is a unique name in NAME of the user xml
         // Return False = there is "new" for NAME in the user xml
-        Serializer sz = new Serializer("Users/user0.xml");
-        User user = new User();
-        sz.DeserializeUser(out user);
+        Serializer sz = new Serializer("Users/" + fileName + ".xml");
+        sz.DeserializeUser(out global);
 
-        if (user.Name == "new")
+        if (global.Name == "new")
             return false;
         else
             return true;
@@ -42,25 +43,27 @@ public class loadUser : MonoBehaviour
 
     private string usernameTitle;
 
+    // this will be used to update the global username
     private string userInputedName = "new";
 
     // Variables used for the text field END
     public void GetUsernameInput()
     {
-        // Upon running, Awake() START
         inputUsername = transform.Find("UserInputField").GetComponent<InputField>();
-        //usernameTitle = transform.Find("titleBackgroundText").GetComponent<UnityEngine.UI.Text>().text;
-        // Upon running, Awake() END
 
-        userInputedName = inputUsername.text;
-        if (userInputedName != "new" && (userInputedName != null && userInputedName.Length < 16))
+        if (inputUsername.text != "new" && (inputUsername.text != null && inputUsername.text.Length < 16))
         {
+            userInputedName = inputUsername.text;
+            Debug.Log("VALID USERNAME ENTERED");
             Debug.Log("Username: " + userInputedName);
             userInputedName = inputUsername.text;
             // is there a way to do this?
             // continueGame.gameContinue();
             // Unity just spits out this error:
             // NullReferenceException: Object reference not set to an instance of an object loadUser.GetUsernameInput()
+
+            // ENABLE ME WHEN NO LONGER DEBUGGING
+            global.Name = userInputedName;
             SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
         else
@@ -68,14 +71,39 @@ public class loadUser : MonoBehaviour
             usernameTitle = "Enter valid username (16 char)";
             transform.Find("titleBackground").Find("titleBackgroundText").GetComponent<UnityEngine.UI.Text>().text = usernameTitle;
 
-            Debug.Log("An invalid username was entered. Can not be 'new', whitespace, or null.");
-            Debug.Log("Invalid Username: " + userInputedName);
+            Debug.LogWarning("An invalid username was entered. Can not be 'new', whitespace, or null.");
+            Debug.LogWarning("Invalid Username: " + userInputedName);
         }
     }
 
-    public void ThisBSIsStupid()
+    public void OpenWindow(string fileName)
     {
-        bool userValidation = checkIfUserValid();
+        bool userCheck = checkIfUserValid(fileName);
+        if (userCheck == false)
+        {
+            Debug.Log("YAY");
+            global.Name = userInputedName;
+            GameObject.Find("Zyphum").GetComponent<ZyphumScript>().currentUser = global;
+        }
+        else
+        {
+        }
+    }
+
+    public void ISaveNewUserNames(int whichFile)
+    {
+        User user = new User();
+        user.Name = userInputedName;
+
+        string fileName = "user" + whichFile.ToString();
+
+        Serializer sz = new Serializer("Users/" + fileName + ".xml");
+        sz.SerializeUser(user);
+    }
+
+    public void ThisBSIsStupid(string fileName)
+    {
+        bool userValidation = checkIfUserValid(fileName);
         if (userValidation == true)
             Debug.Log("USER VALID");
         else
