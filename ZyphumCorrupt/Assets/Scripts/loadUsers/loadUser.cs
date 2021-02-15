@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class loadUser : MonoBehaviour
 {
     private string testtest = "";
-    private continueGame continueGame = new continueGame();
+    private continueGame continueGame/* = new continueGame()*/;
 
     // Start is called before the first frame update
     private void Awake()
@@ -40,38 +40,37 @@ public class loadUser : MonoBehaviour
     // Variables used for the text field START
     private InputField inputUsername;
 
-    private UnityEngine.UI.Text displayEnterValidUser;
+    private string usernameTitle;
 
     private string userInputedName = "new";
-    /*private Button submitUsername;
-    private Button cancelUsername;*/
 
     // Variables used for the text field END
     public void GetUsernameInput()
     {
         // Upon running, Awake() START
-        /*submitUsername = transform.Find("SubmitUsername").GetComponent<Button>();
-        cancelUsername = transform.Find("CancelUsername").GetComponent<Button>();*/
         inputUsername = transform.Find("UserInputField").GetComponent<InputField>();
-        displayEnterValidUser = transform.Find("enterValidUsername").GetComponent<UnityEngine.UI.Text>();
+        //usernameTitle = transform.Find("titleBackgroundText").GetComponent<UnityEngine.UI.Text>().text;
         // Upon running, Awake() END
 
         userInputedName = inputUsername.text;
-        if (userInputedName != "new" || userInputedName == null || userInputedName.Length > 16)
+        if (userInputedName != "new" && (userInputedName != null && userInputedName.Length < 16))
         {
+            Debug.Log("Username: " + userInputedName);
             userInputedName = inputUsername.text;
-            continueGame.gameContinue();
+            // is there a way to do this?
+            // continueGame.gameContinue();
+            // Unity just spits out this error:
+            // NullReferenceException: Object reference not set to an instance of an object loadUser.GetUsernameInput()
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
         else
-            displayEnterValidUser.SetActive(true);
-        displayEnterValidUser();
+        {
+            usernameTitle = "Enter valid username (16 char)";
+            transform.Find("titleBackground").Find("titleBackgroundText").GetComponent<UnityEngine.UI.Text>().text = usernameTitle;
 
-        Debug.Log("Username: " + userInputedName);
-    }
-
-    public void displayEnterValidUser()
-    {
-        gameObject.SetActive(true);
+            Debug.Log("An invalid username was entered. Can not be 'new', whitespace, or null.");
+            Debug.Log("Invalid Username: " + userInputedName);
+        }
     }
 
     public void ThisBSIsStupid()
