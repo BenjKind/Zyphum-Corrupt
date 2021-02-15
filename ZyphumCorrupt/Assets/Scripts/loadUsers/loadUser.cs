@@ -62,7 +62,6 @@ public class loadUser : MonoBehaviour
             // Unity just spits out this error:
             // NullReferenceException: Object reference not set to an instance of an object loadUser.GetUsernameInput()
 
-            // ENABLE ME WHEN NO LONGER DEBUGGING
             global.Name = userInputedName;
             SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
