@@ -56,13 +56,14 @@ public class loadUser : MonoBehaviour
             userInputedName = inputUsername.text;
             Debug.Log("VALID USERNAME ENTERED");
             Debug.Log("Username: " + userInputedName);
-            userInputedName = inputUsername.text;
+            //userInputedName = inputUsername.text;
             // is there a way to do this?
             // continueGame.gameContinue();
             // Unity just spits out this error:
             // NullReferenceException: Object reference not set to an instance of an object loadUser.GetUsernameInput()
 
             global.Name = userInputedName;
+            ISaveNewUserNames(0);
             SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
         else
@@ -87,7 +88,7 @@ public class loadUser : MonoBehaviour
         else
         {
             // Loads the user IF there is a player in that spot
-            global.Name = userInputedName;
+            global.Name = userInputedName; // BUT I NEED TO READ THE FILE, GET THE NAME
             GameObject.Find("Zyphum").GetComponent<ZyphumScript>().currentUser = global;
             SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
@@ -106,13 +107,16 @@ public class loadUser : MonoBehaviour
 
     public void ISaveNewUserNames(int whichFile)
     {
-        User user = new User();
-        user.Name = userInputedName;
+        User toSaveMe = new User();
+        toSaveMe.Name = userInputedName;
 
-        string fileName = "user" + whichFile.ToString();
+        string fileName = whichFile.ToString();
 
         Serializer sz = new Serializer("Users/" + fileName + ".xml");
-        sz.SerializeUser(user);
+        Debug.LogWarning("LOCAL:  " + toSaveMe.Name.ToString());
+        Debug.LogWarning("GLOBAL: " + userInputedName);
+        Debug.Log(fileName);
+        sz.SerializeUser(toSaveMe);
     }
 
     public void ThisBSIsStupid(string fileName)
