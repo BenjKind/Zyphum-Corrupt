@@ -86,7 +86,22 @@ public class loadUser : MonoBehaviour
         }
         else
         {
+            // Loads the user IF there is a player in that spot
+            global.Name = userInputedName;
+            GameObject.Find("Zyphum").GetComponent<ZyphumScript>().currentUser = global;
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
+    }
+
+    public void UpdateSaveSlotName(int whichButton)
+    {
+        // I need to update the user on the load of the game. Maybe on Awake() ??
+
+        // Use IN to update the text on the button effected
+        // IN: userInputedName
+        // NEED: Button variable for text
+        // NEED: Button variable for text
+        // OUT: write username to button
     }
 
     public void ISaveNewUserNames(int whichFile)
