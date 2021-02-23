@@ -3,27 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class loadUser : MonoBehaviour
 {
-    private string testtest = "";
-    private continueGame continueGame/* = new continueGame()*/;
-    private User global = new User();
-    private ZyphumScript globalBoi;
+    private int globalFileName;
+    private User global;
 
     // Start is called before the first frame update
     private void Awake()
     {
+        initialGlobalUserName();
+        Debug.LogWarning("GLOBAL: " + userInputedName);
         string[] userNamesToDisplay = new string[3];
+        Serializer sz;
+        User user;
 
         for (int i = 0; i < 3; i++)
         {
-            string userNameRead = "";
-            userNamesToDisplay[i] = userNameRead;
+            sz = new Serializer("Users/" + i + ".xml");
+            user = new User();
+            sz.DeserializeUser(out user);
+            userNamesToDisplay[i] = user.Name.ToString();
+        }
+
+        for (int j = 0; j <= 2; j++)
+        {
+            Debug.Log("TESTTEST - " + j);
+            Debug.Log(userNamesToDisplay[j]);
+            GameObject.Find("user" + j).GetComponentInChildren<Text>().text = userNamesToDisplay[j];
         }
     }
 
-    public bool checkIfUserValid(string fileName)
+    public bool checkIfUserValid(int fileName)
     {
         // Returns true or false upon checking user data
         // Reads XML
@@ -49,21 +61,16 @@ public class loadUser : MonoBehaviour
     // Variables used for the text field END
     public void GetUsernameInput()
     {
-        inputUsername = transform.Find("UserInputField").GetComponent<InputField>();
+        inputUsername = transform.Find("UsernameInputWindow").Find("UserInputField").GetComponent<InputField>();
 
         if (inputUsername.text != "new" && (inputUsername.text != null && inputUsername.text.Length < 16))
         {
             userInputedName = inputUsername.text;
             Debug.Log("VALID USERNAME ENTERED");
             Debug.Log("Username: " + userInputedName);
-            //userInputedName = inputUsername.text;
-            // is there a way to do this?
-            // continueGame.gameContinue();
-            // Unity just spits out this error:
-            // NullReferenceException: Object reference not set to an instance of an object loadUser.GetUsernameInput()
 
             global.Name = userInputedName;
-            ISaveNewUserNames(0);
+            ISaveNewUserNames(globalFileName);
             SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
         else
@@ -76,33 +83,41 @@ public class loadUser : MonoBehaviour
         }
     }
 
-    public void OpenWindow(string fileName)
+    public void initialGlobalUserName()
     {
-        bool userCheck = checkIfUserValid(fileName);
+        Serializer sz = new Serializer("Users/lastUser.xml");
+        User user = new User();
+        sz.DeserializeUser(out user);
+        global = user;
+        userInputedName = user.Name.ToString();
+        setFileName(Int32.Parse(user.Name));
+    }
+
+    public void OpenWindow()
+    {
+        bool userCheck = checkIfUserValid(globalFileName);
         if (userCheck == false)
         {
-            Debug.Log("YAY");
-            global.Name = userInputedName;
+            Serializer ser = new Serializer("Users/" + globalFileName.ToString() + ".xml");
+            User temp = new User();
+            ser.DeserializeUser(out temp);
+
+            global.Name = temp.Name;
+
+            User temper = new User();
+            temper.Name = globalFileName.ToString();
+
+            Serializer sz = new Serializer("Users/lastUser.xml");
+            sz.SerializeUser(temper);
             GameObject.Find("Zyphum").GetComponent<ZyphumScript>().currentUser = global;
+            //SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
         else
         {
             // Loads the user IF there is a player in that spot
-            global.Name = userInputedName; // BUT I NEED TO READ THE FILE, GET THE NAME
-            GameObject.Find("Zyphum").GetComponent<ZyphumScript>().currentUser = global;
+            global.Name = userInputedName;
             SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
-    }
-
-    public void UpdateSaveSlotName(int whichButton)
-    {
-        // I need to update the user on the load of the game. Maybe on Awake() ??
-
-        // Use IN to update the text on the button effected
-        // IN: userInputedName
-        // NEED: Button variable for text
-        // NEED: Button variable for text
-        // OUT: write username to button
     }
 
     public void ISaveNewUserNames(int whichFile)
@@ -115,20 +130,11 @@ public class loadUser : MonoBehaviour
         Serializer sz = new Serializer("Users/" + fileName + ".xml");
         Debug.LogWarning("LOCAL:  " + toSaveMe.Name.ToString());
         Debug.LogWarning("GLOBAL: " + userInputedName);
-        Debug.Log(fileName);
         sz.SerializeUser(toSaveMe);
     }
 
-    public void ThisBSIsStupid(string fileName)
+    public void setFileName(int temp)
     {
-        bool userValidation = checkIfUserValid(fileName);
-        if (userValidation == true)
-            Debug.Log("USER VALID");
-        else
-        {
-            Debug.Log("USER NEEDS TO BE CREATED");
-            GetUsernameInput();
-            Debug.Log(testtest);
-        }
+        globalFileName = temp;
     }
 }
