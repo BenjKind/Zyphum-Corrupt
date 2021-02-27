@@ -29,8 +29,6 @@ public class loadUser : MonoBehaviour
 
         for (int j = 0; j <= 2; j++)
         {
-            Debug.Log("TESTTEST - " + j);
-            Debug.Log(userNamesToDisplay[j]);
             GameObject.Find("user" + j).GetComponentInChildren<Text>().text = userNamesToDisplay[j];
         }
     }
@@ -110,7 +108,6 @@ public class loadUser : MonoBehaviour
             Serializer sz = new Serializer("Users/lastUser.xml");
             sz.SerializeUser(temper);
             GameObject.Find("Zyphum").GetComponent<ZyphumScript>().currentUser = global;
-            //SceneManager.LoadScene(2, LoadSceneMode.Single);
         }
         else
         {
