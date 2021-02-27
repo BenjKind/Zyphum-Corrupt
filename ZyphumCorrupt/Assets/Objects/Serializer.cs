@@ -9,19 +9,20 @@ public class Serializer
 {
     public string filePath;
     private string lastSave = "lastSave.xml";
+
     public Serializer()
     {
-
     }
+
     public Serializer(string path)
     {
         filePath = path;
     }
+
     public void SerializeUser(User user)
     {
-        
         StreamWriter sw = new StreamWriter(filePath);
-        
+
         System.Xml.Serialization.XmlSerializer x = new System.Xml.Serialization.XmlSerializer(user.GetType());
         x.Serialize(sw, user);
 
@@ -33,9 +34,8 @@ public class Serializer
         y.Serialize(sw, user);
 
         sw.Close();
-
-
     }
+
     public void DeserializeUser(out User userOut)
     {
         StreamReader sr = new StreamReader(filePath);
@@ -47,9 +47,8 @@ public class Serializer
         sr.Close();
 
         userOut = user;
-
-
     }
+
     public void DeserializeLast(out User user)
     {
         StreamReader sr = new StreamReader(lastSave);
@@ -61,7 +60,6 @@ public class Serializer
         sr.Close();
 
         user = tempUser;
-
     }
 
     public void SerializeCharacter(Character character)
@@ -80,11 +78,11 @@ public class Serializer
         y.Serialize(sw, character);
 
         sw.Close();
-
     }
-    public void DeserializeCharacter(string characterName , out Character character)
+
+    public void DeserializeCharacter(string characterName, out Character character)
     {
-        string path = "Characters/" +characterName+ ".xml";
+        string path = "Characters/" + characterName + ".xml";
 
         StreamReader sr = new StreamReader(path);
 
@@ -96,6 +94,7 @@ public class Serializer
 
         character = Char;
     }
+
     public void SerializeItem(Item item)
     {
         string path = "Items/" + item.Name + ".xml";
@@ -112,8 +111,8 @@ public class Serializer
         y.Serialize(sw, item);
 
         sw.Close();
-
     }
+
     public void DeserializeItem(string itemName, out Item item)
     {
         string path = "Items/" + itemName + ".xml";
@@ -128,6 +127,7 @@ public class Serializer
 
         item = obj;
     }
+
     public void DeserializeItemFull(string itemName, out Item item)
     {
         string path = itemName;
@@ -142,6 +142,7 @@ public class Serializer
 
         item = obj;
     }
+
     public void SerializeEquipment(Equipment equipment)
     {
         string path = "Equipment/" + equipment.Name + ".xml";
@@ -158,8 +159,8 @@ public class Serializer
         y.Serialize(sw, equipment);
 
         sw.Close();
-
     }
+
     public void DeserializeEquioment(string equipmentName, out Equipment equipment)
     {
         string path = "Equipment/" + equipmentName + ".xml";
@@ -177,7 +178,7 @@ public class Serializer
 
     public void DeserializeEquiomentFull(string equipmentName, out Equipment equipment)
     {
-        string path =  equipmentName;
+        string path = equipmentName;
 
         StreamReader sr = new StreamReader(path);
 
@@ -189,5 +190,4 @@ public class Serializer
 
         equipment = Equip;
     }
-
 }

@@ -14,6 +14,7 @@ public class NewBehaviourScript : MonoBehaviour
     public void dothisthing()
     {
         /*
+
         #region Code Block
 
         Serializer sz = new Serializer();
@@ -120,6 +121,7 @@ public class NewBehaviourScript : MonoBehaviour
         sz.SerializeEquipment(boots);
 
         #endregion Item Code Block
+
         */
     }
 }
