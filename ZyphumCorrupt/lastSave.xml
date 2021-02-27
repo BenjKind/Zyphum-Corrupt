@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<User xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name>Frank</Name>
-  <characters />
-  <items />
-  <equipment />
-  <currency>0</currency>
-</User>
