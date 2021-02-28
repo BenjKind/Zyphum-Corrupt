@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class User
 {
-
     #region Members
 
     public string Name;
@@ -14,8 +13,7 @@ public class User
     public List<Equipment> equipment = new List<Equipment>();
     public int currency = 0;
 
-
-    #endregion
+    #endregion Members
 
     #region Getters Setters
 
@@ -23,18 +21,16 @@ public class User
     {
         return Name;
     }
-    
+
     public void SetName(string input)
     {
         Name = input;
     }
 
-    #endregion
+    #endregion Getters Setters
 
     public User()
     {
         Name = "Null";
     }
-
-
 }

@@ -5,14 +5,13 @@ using UnityEngine;
 
 public class Inventory
 {
-
     #region Members
 
-    int maxCount;
+    public int maxCount;
 
     public List<BaseObject> ObjectList;
 
-    #endregion
+    #endregion Members
 
     public Inventory()
     {
