@@ -8,7 +8,7 @@ using UnityEngine;
 public class Serializer
 {
     public string filePath;
-    private string lastSave = "Users/lastUser.xml";
+    private string lastSave = "lastSave.xml";
 
     public Serializer()
     {
