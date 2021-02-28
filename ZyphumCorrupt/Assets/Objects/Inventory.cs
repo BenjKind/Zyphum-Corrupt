@@ -7,7 +7,7 @@ public class Inventory
 {
     #region Members
 
-    private int maxCount;
+    public int maxCount;
 
     public List<BaseObject> ObjectList;
 
